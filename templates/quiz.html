@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/index1.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>QUIZ</title>
+</head>
+<body id = body_quiz>
+    <div id = "myHeader">
+        <div id = header1>
+                <div id = logo>
+                        C4E22 CAREER    
+                    </div>
+                    <div id = 'headercontent'>
+                        <a href="/home" class = header>HOME</a>
+                        <a href="/personal_types" class = header>PERSONALITY</a>
+                        <a href="/job_sector" class = header >JOBS</a>
+                        <a href="/topics" class = header >HOT</a>
+                        <a href="/story" class = header  id = 'email'>EMAIL US</a>
+                    </div>
+        </div>
+        <div id = txt>
+            <i id = lttxt>Let us help you</i>
+            <b id = bigtxt>FIND YOUR CAREER</b>
+            <a href="/quiz" id = quiz> <b>DO THIS TEST</b>  </a>
+        </div>
+    </div>
+    <div id = "myBody1">
+        <div>
+            <h1 id = pem>Pick One</h1>
+            <p id = "Intro"> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum, wolor sit amet consectetur adipisicing elit. Vero consequuntur laborum eveniet harum. Iusto reprehenderit quibusdam temporibus voluptate corporis, voluptates voluptatum.
+            </p>
+        </div>   
+    </div>
+    <div id="content">
+        {% for question in question_list %}
+            {% set outer_loop = loop %}
+            {% if loop.index == 1 %}
+                <div class = quiz_image id="{{ loop.index }}">
+            {% else %}
+                <div class = quiz_image id="{{ loop.index }}" style="display: none">
+            {% endif %}
+            {% for answer in question.question %}
+                <div class="polaroid" id="answer_{{ outer_loop.index }}_{{ loop.index }}" point="{{ answer.point }}">
+                    <img src = "{{ answer.link }}" alt="image1" style = "width:450px;height:350px;">
+                    <div class="container">
+                        {% if loop.index % 2 != 0 %}
+                            <p> Picture 1</p>
+                        {% else %}
+                            <p> Picture 2</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+            
+
+        </div>
+        {% endfor %}
+    </div>
+    <a href="/result">bam cai nay</a>
+    <div id = "footer">
+        <p> Tầng 6, nhà C, tòa nhà Chigamex - 22 Thành Công, Ba Đình, Hà Nội -- c4e22career@gmail.com</p>
+    </div>
+
+    <script src="../static/quiz.js"></script>
+</body>
+</html>

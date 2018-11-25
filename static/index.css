@@ -1,0 +1,566 @@
+/* * {
+    border: 1px red dashed;
+
+} */
+
+
+
+h2 {
+    margin-top: -50px;  
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin:0px;
+}
+#logo{
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+    width:60px;
+    border: #ffffff solid;
+    padding:5px;
+    margin-left:30px;
+    margin-top:10px;
+}
+#myHeader {
+    background-color: #a6a6a6;
+    height:60%;
+    padding: 20px 10px 20px 10px;
+    background-image: url(lorenzo-castagnone-404821-unsplash.jpg);
+    background-size: cover;
+
+}
+#myHeader1 {
+    background-color: #a6a6a6;
+    height:60%;
+    padding: 20px 10px 20px 10px;
+    background-image: url(phil-botha-418247-unsplash.jpg);
+    background-size: cover;
+}
+
+#myHeader3 {
+    background-color: #a6a6a6;
+    height:60%;
+    padding: 20px 10px 20px 10px;
+    background-image: url(clint-mckoy-745338-unsplash.jpg);
+    background-size: cover;
+
+}
+
+#myHeader2 {
+    background-color: #a6a6a6;
+    height:60%;
+    padding: 20px 10px 20px 10px;
+    background-image: url(michael-hull-12842-unsplash.jpg);
+    background-size: cover;
+
+}
+#header1{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;  
+
+}
+#headercontent{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;    
+}
+#email{
+    border: #ffffff solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#txt{
+    height:80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#lttxt{
+
+    font-family: 'Sacramento', cursive;
+    font-size:35px;
+    color:#ffffff;
+}
+
+
+
+#bigtxt{
+
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:50px;
+    color:#ffffff;
+}
+
+
+
+@keyframes title {
+    0%   {right:0px; bottom:300px;}
+    25%  {right:0px; bottom:0px;}
+
+}
+
+/* The element to apply the animation to */
+#bigtxt, #lttxt {
+
+    position: relative;
+    animation-name: title;
+    animation-duration: 4s;
+    float:left;
+}
+#quiz{
+    margin-top:30px;
+    font-size:25px;
+    color: #ffffff;
+    border: #29c6a4 solid;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color:#29c6a4;
+    text-decoration:none; 
+    
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-right:40px;
+    margin-top:20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.types {
+    background-color:#29c6a4;
+    border : none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-color: #29c6a4   ;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    
+}
+
+
+.types, #quiz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.types:hover, #quiz:hover, .types:focus, #quiz:focus, .types:active, #quiz:active {
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: black;
+    background-color: black;
+    color: white;
+}
+
+
+#reet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+    color: brown;
+
+}
+
+#heading {
+    margin-top: 250px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 3px;
+    font-size: 100px;
+}
+
+#first {
+    color: black;
+    font-family: 'Sacramento', cursive;
+    margin-top: 100px;
+    width: 30%;
+    margin-left:270px;
+}
+
+.first{
+    font-size: 18px;
+    width: 30%;
+    margin-left: 200px;
+    color: black;
+    font-family: 'Crimson Text', serif;
+}
+
+#raat {
+    height: 70%;
+    margin-top: 100px;
+    background-image: url(https://thewritelife.com/wp-content/uploads/2014/06/You-Are-a-Writer.jpg);
+    background-repeat: no-repeat;
+    background-position: right 250px top 10px;
+
+}
+
+#riit {
+    height: 60%;
+    margin-top: 100px;
+    background-image: url(http://idtbardoli.com/images/sketch/fd4.jpg);
+    background-repeat: no-repeat;
+    background-position:  left 250px top 30px
+}
+
+#second {
+    width: 30%;
+    color: black;
+    font-family: 'Sacramento', cursive;
+    margin-left: 850px;
+}
+
+.second {
+    width: 30%;
+    color: black;
+    margin-left: 730px;
+    font-family: 'Crimson Text', serif;
+}
+
+#ruut {
+    height: 60%;
+    margin-top: 150px;
+    background-image: url(https://www.entinstitute.com/wp-content/uploads/2016/08/bigstock-135035885-300x300.jpg);
+    background-repeat: no-repeat;
+    background-position: right 250px top 10px;
+}
+
+#third {
+    width: 30%;
+    color: black;
+    margin-left: 300px;
+    font-family: 'Sacramento', cursive;
+}
+
+.third {
+    width: 30%;
+    color: black;
+    margin-left: 200px;
+    font-family: 'Crimson Text', serif;
+}
+
+#ryyt {
+    height: 60%;
+    margin-top: 150px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL5n_uO3rWe15HcKoTJ_LujshwGRjk7YvOLzMgbJYt0oIHpXUS);
+    background-repeat: no-repeat;
+    background-position:  left 250px top 30px
+}
+
+#fourth {
+    width: 30%;
+    color: black;
+    font-family: 'Sacramento', cursive;
+    margin-left: 850px;
+}
+
+.fourth {
+    width: 30%;
+    color: black;
+    margin-left: 730px;
+    font-family: 'Crimson Text', serif;
+}
+
+#rkkt {
+    height: 60%;
+    margin-top: 150px;
+    background-image: url(https://rathoredetactiveagency.advertroindia.co.in/uploads/rathoredetactiveagency/updates/99663/detective.jpg);
+    background-repeat: no-repeat;
+    background-position: right 200px top 10px;
+}
+
+#fifth {
+    width: 30%;
+    color: black;
+    margin-left: 300px;
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+}
+
+.fifth {
+    width: 30%;
+    color: black;
+    margin-left: 200px;
+    font-family: 'Crimson Text', serif;
+}
+
+#footer{
+    height: 10%;
+    background-color: #33373d;
+    color:#e8ebef;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#pem{
+    font-family: 'Sacramento', cursive;
+    font-size:50px;
+    padding-top:20px;
+    padding-left:50px;
+}
+
+
+#myBody1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#they {
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+}
+
+#main {
+    display: flex;
+    flex-flow: column;
+    justify-content:  center;
+    align-items: center
+}
+
+#congla {
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+
+}
+
+
+.title {
+
+    font-family: 'Sacramento', cursive;
+}
+
+.content {
+    margin-top: 30px;
+    font-family: 'Crimson Text', serif;
+
+}
+
+.job_lists2 {
+    color: white;
+    border: 1px #0e8369 solid;
+    background-color: #0e8369;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-family: 'Crimson Text', serif;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.job_lists1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    color: #0e8369;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+
+#job_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.g1 {
+    display: flex;
+    flex-flow: column;
+    border: 3px rgba(14,131,105,0.5) solid; 
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.g2 {
+    display: flex;
+    flex-flow: column;
+    border: 3px rgba(14,131,105,0.5) solid; 
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-right: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+#main_group_des {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    color: #0e8369;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.group_des {
+    width: 18%;
+    display: flex;
+    flex-flow: column;
+    border: 3px rgba(14,131,105,0.5) solid; 
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#job_define {
+    display: flex;
+    flex-flow: row;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    width: 70%;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 200px;
+
+}
+#img1{
+    width: 900px;
+    height: 300px;
+    background-image: url(rawpixel-1054555-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 100px;
+    background-attachment: fixed;
+
+}
+
+#respon {
+    display: flex;
+    flex-flow: row;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    width: 70%;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 500px
+}
+
+#img2 {
+    width: 500px;
+    height: 500px;
+    background-image: url(rawpixel-1054555-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 100px;
+    background-attachment: fixed;
+
+}
+
+#employ {
+
+    display: flex; 
+    flex-flow: row; 
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    width: 70%;
+    height: 500px;
+    margin-left:200px;
+    margin-top: 500px
+}
+
+#img3 {
+    width: 500px;
+    height: 500px;
+    background-image: url(rawpixel-1054555-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 100px;
+    background-attachment: fixed;
+}
+#qualifi {
+    display: flex;
+    flex-flow:row;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    width:70%;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 500px
+}
+#img4 {
+    width: 5000px;
+    height: 500px;
+    background-image: url(rawpixel-1054555-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 100px;
+    background-attachment: fixed;
+
+}
+#key {
+    display: flex; 
+    flex-flow: row; 
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    width: 70%;
+    height: 500px;
+    margin-left:200px;
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+#img5{
+    width: 900px;
+    height: 360px;
+    background-image: url(rawpixel-1054555-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 100px;
+    background-attachment: fixed;
+}
+

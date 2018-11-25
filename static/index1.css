@@ -1,0 +1,305 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin:0px;
+}
+#logo{
+    color:#ffffff;
+    font-family: 'Permanent Marker', cursive;
+    width:60px;
+    border: #ffffff solid;
+    padding:5px;
+    margin-left:30px;
+    margin-top:10px;
+}
+#myHeader {
+    background-color: #a6a6a6;
+    height:60%;
+    padding: 20px 10px 20px 10px;
+    background-image: url(https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e2b5994cdf8eb13b0a8fb1b65ae60712&auto=format&fit=crop&w=889&q=80);
+    background-size: cover;
+
+}
+#header1{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;  
+
+}
+#headercontent{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;    
+}
+#email{
+    border: #ffffff solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* #txt{
+    font-size: 25px;
+    height:80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+} */
+#txt{
+    height:80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+/* #lttxt{
+    font-family: 'Sacramento', cursive;
+    font-size:35px;
+    color:#ffffff;
+} */
+#lttxt{
+
+    font-family: 'Sacramento', cursive;
+    font-size:35px;
+    color:#ffffff;
+}
+/* #bigtxt{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:50px;
+    color:#ffffff;
+} */
+#bigtxt{
+
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:50px;
+    color:#ffffff;
+}
+#home_quiz{
+    font-size:15px;
+    color: #ffffff;
+    border: #29c6a4 solid;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color:#29c6a4;
+    text-decoration:none; 
+    
+    
+}
+#bigtxt, #lttxt {
+
+    position: relative;
+    animation-name: title;
+    animation-duration: 4s;
+    float:left;
+}
+#quiz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+#quiz:focus, .types:active, #quiz:active {
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: black;
+    background-color: black;
+    color: white;
+}
+
+#quiz{
+    margin-top:30px;
+    font-size:25px;
+    color: #ffffff;
+    border: #29c6a4 solid;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color:#29c6a4;
+    text-decoration:none; 
+    
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-right:40px;
+    margin-top:20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#myBody1{
+    height: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+#pem{
+    font-family: 'Sacramento', cursive;
+    font-size:50px;
+    padding-top:20px;
+    text-align: center;
+}
+#Intro{
+    font-family: 'Crimson Text', serif;
+    width: 600px;
+    font-size:18px;
+    text-align: center;
+}
+
+#made{
+    font-family: 'Sacramento', cursive;
+    font-size:30px;
+    padding-left:150px;
+}
+#about{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:15px;
+    color:#a6a6a6;
+}
+#txt2{
+    font-family: 'Crimson Text', serif;
+    font-size:20px;
+    width :300px;
+    text-align: center;
+}
+#box1{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+#box2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:150px;
+}
+
+#box3{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top:100px;
+    margin-bottom: 150px;
+}
+#box4{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+#img1{
+    margin-left:150px;
+}
+#mybody2{
+    width:100%;
+}
+
+#footer{
+    height: 10%;
+    background-color: #33373d;
+    color:#e8ebef;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz_header{
+    height: 10%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#home_quiz{
+    font-size:15px;
+    color: #ffffff;
+    border: #29c6a4 solid;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color:#29c6a4;
+    text-decoration:none;
+    margin-left:100px;
+}
+#body_quiz{
+
+}
+
+.polaroid{
+    width:450px;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 25px;
+    
+}
+.container{
+    font-family: 'Inconsolata', monospace;
+    font-size:20px;
+    color:#33373d;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #e8eaed;
+    
+}
+.quiz_image{
+    margin-top:10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:150px;
+}
+#bigtxt1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:60px;
+    color:#29c6a4;
+}
+.polaroid{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.polaroid:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#lttxt1{
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    font-family: 'Inconsolata', monospace;
+    font-size:16px;
+    color:#33373d;
+    margin-top:50px;
+}
+#paragraph{
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    font-family: 'Inconsolata', monospace;
+    font-size:16px;
+    color:#33373d;
+    margin-top:50px;
+}

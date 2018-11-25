@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="personal_type.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Franklin|Roboto|Sacramento" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="../static/index.css">
+
+    <title>Job Descriptions</title>
+</head>
+<body>
+    <div id = "myHeader3">
+        <div id = header1>
+            <div id = logo>
+                C4E22 CAREER    
+            </div>
+            <div id = 'headercontent'>
+                    <a href="/home" class = header>HOME</a>
+                    <a href="/personal_types" class = header>PERSONALITY</a>
+                    <a href="/job_sector" class = header >JOBS</a>
+                    <a href="/topics" class = header >HOT</a>
+                    <a href="/story" class = header  id = 'email'>EMAIL US</a>
+            </div>
+        </div>
+        <div id = txt>
+            <i id = lttxt>Career Sector</i>
+            <b id = bigtxt>{{ job_sector.upper() }}</b>
+            <a href="/quiz" id = quiz> <b>DO THIS TEST</b>  </a>
+        </div>
+    </div>
+    <div id="main_group_des">
+        <div class="group_des">
+            {% for i in j_list %}
+                {% if loop.index%3 == 0  %}
+                    <h4><a href="http://127.0.0.1:5000/job_sector/{{js_code}}/{{i['code']}}"> <span class="job_lists2">{{ i['job_name'] }}</span> </a></h4>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="group_des">
+            {% for i in j_list %}
+                {% if loop.index%3 == 1  %}
+                    <h4><a href="http://127.0.0.1:5000/job_sector/{{js_code}}/{{i['code']}}">   <span class="job_lists2">{{ i['job_name'] }}</span></a></h4>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="group_des">
+            {% for i in j_list %}
+                {% if loop.index%3 == 2  %}
+                    <h4><a href="http://127.0.0.1:5000/job_sector/{{js_code}}/{{i['code']}}">  <span class="job_lists2">{{ i['job_name'] }}</span></a></h4>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

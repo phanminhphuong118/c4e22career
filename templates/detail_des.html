@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="personal_type.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Franklin|Roboto|Sacramento" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/index.css">
+    <title>Detail Description</title>
+</head>
+<body>
+    <div id = "myHeader2">
+        <div id = header1>
+                <div id = logo>
+                        C4E22 CAREER    
+                    </div>
+                    <div id = 'headercontent'>
+                            <a href="/home" class = header>HOME</a>
+                            <a href="/personal_types" class = header>PERSONALITY</a>
+                            <a href="/job_sector" class = header >JOBS</a>
+                            <a href="/topics" class = header >HOT</a>
+                            <a href="/story" class = header  id = 'email'>EMAIL US</a>
+                    </div>
+        </div>
+        <div id = txt>
+            <i id = lttxt>The job</i>
+            <b id = bigtxt>
+                    <div id="job_name">
+                        <h1>{{j.job_name}}</h1>
+                    </div>
+            </b>
+            <a href="/quiz" id = quiz> <b>DO THIS TEST</b>  </a>
+        </div>    
+    </div>
+    <div id="main_detail">
+
+        <div id="job_define">
+            <div>
+                <h2 class="job_define">  Define :</h2> {{j.job_define}} 
+            </div>
+            
+            <div id="img1">
+
+            </div>
+        </div>
+        <div id="respon">
+                <div id="img2">
+                
+                </div>
+                <div>
+                        <h2 class="respon">Responsibility:</h2>
+                    <ul>
+                        {% for li in j.res %}
+                            <li>{{ li }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+        </div>
+        <div id="employ">
+            <div>
+                            <h2 class="employ">Employers:</h2>
+            {% for i in j.empls["p"] %}
+            <p>{{ i }}</p>
+            {% endfor %}
+            {% for i in j.empls["li"] %}
+                <li>{{ i }}</li>
+            {% endfor %}
+            </div>
+
+            
+
+            <div id="img3">
+            </div>
+        </div>
+        <div id="qualifi">
+            <div id="img4">
+
+            </div>
+            <div>
+                           <h2 class="qualifi">Qualifications and training required:</h2>
+            {% for i in j.quals["p"] %}
+                <p>{{ i }}</p>
+            {% endfor %}
+            {% for i in j.quals["li"] %}
+                <li>{{ i }}</li>
+            {% endfor %} 
+            </div>
+
+        </div>
+        <div id="key">
+            <div>
+            <h2 class="key">Key skills:</h2>
+            {% for i in j.skills["p"] %}
+                <p>{{ i }}</p>
+            {% endfor %}
+            {% for i in j.skills["li"] %}
+                <li>{{ i }}</li>
+            {% endfor %}
+            </div>
+  
+            <div id="img5">
+
+            </div>
+        </div>
+
+    </div>
+    <div id = "footer">
+            <p> Tầng 6, nhà C, tòa nhà Chigamex - 22 Thành Công, Ba Đình, Hà Nội -- c4e22career@gmail.com</p>
+        </div>
+    
+</body>
+</html>
